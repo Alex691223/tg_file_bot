@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: myfilekeeperbot
+    name: my-python-app
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
-    runtime: python3.11
+    pythonVersion: "3.11"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
