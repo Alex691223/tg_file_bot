@@ -5,7 +5,7 @@ from database import init_db
 import sqlite3
 from datetime import datetime
 
-bot = Bot(token=API_TOKEN)
+bot = Bot print("API_TOKEN:", repr(API_TOKEN))
 dp = Dispatcher(bot)
 
 init_db()
