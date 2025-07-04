@@ -43,7 +43,7 @@ async def handle_files(msg: types.Message):
         return
 
     file_id = file.file_id
-    file_type = getattr(file, 'mime_type', 'unknown')
+    file_type = getattr(file, 'mime_type', None) or 'unknown'
     caption = msg.caption or "Без описания"
     category = detect_category(file_type)
 
